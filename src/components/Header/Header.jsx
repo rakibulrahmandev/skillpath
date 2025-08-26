@@ -1,7 +1,15 @@
 import { RiCloseLine, RiMenuLine } from "@remixicon/react"
 import { navItems } from "../../constants/data"
+import { useState } from "react"
 
 export default function Header() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <>
             <header className="w-full py-5">
@@ -12,21 +20,21 @@ export default function Header() {
                         </a>
                     </div>
                     {/* sm nav */}
-                    <nav className="lg:hidden fixed top-0 left-0 bg-white w-full h-screen flex flex-col items-center justify-center z-40 -translate-y-full transition-transform">
-                        <button className="absolute top-8 right-8">
+                    <nav className={`lg:hidden fixed top-0 left-0 bg-white w-full h-screen flex flex-col items-center justify-center z-40 ${isOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform`}>
+                        <button className="absolute top-8 right-8" onClick={handleClick}>
                             <RiCloseLine size={30}/>
                         </button>
                         <ul className="space-y-5 text-center">
                             {navItems.map((item) => (
                                 <li key={item?.id}>
-                                    <a href="#" className="text-lg font-medium hover:text-orange-50 transition-colors">{item?.label}</a>
+                                    <a href="#" onClick={handleClick} className="text-lg font-medium hover:text-orange-50 transition-colors">{item?.label}</a>
                                 </li>
                             ))}
                         </ul>
                         <button className="primary-btn mt-12 max-w-40 w-full">Login</button>
                     </nav>
                     <div className="w-auto lg:hidden">
-                        <button className="">
+                        <button className="w-auto" onClick={handleClick}>
                             <RiMenuLine />
                         </button>
                     </div>
@@ -44,5 +52,5 @@ export default function Header() {
                 </div>
             </header>
         </>
-    )
-}
+    );
+};
