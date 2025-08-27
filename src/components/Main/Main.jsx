@@ -1,4 +1,5 @@
 import Benefits from "../Benefits/Benefits";
+import Courses from "../Courses/Courses";
 import Home from "../Home/Home";
 
 export default function Main() {
@@ -6,6 +7,7 @@ export default function Main() {
         <>
             <Home />
             <Benefits />
+            <Courses />
         </>
     );
 };
