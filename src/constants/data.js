@@ -168,7 +168,7 @@ export const testimonialsItems = [
     id: 1,
     text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
     author: "Sarah L",
-    img: "/images/testi-img-1.png",
+    img: "/image/testi-img-1.png",
   },
   {
     id: 2,
