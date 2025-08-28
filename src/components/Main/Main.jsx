@@ -1,5 +1,6 @@
 import Benefits from "../Benefits/Benefits";
 import Courses from "../Courses/Courses";
+import Faq from "../Faq/Faq";
 import Home from "../Home/Home";
 import Testimonials from "../Teatimonials/Testimonials";
 
@@ -10,6 +11,7 @@ export default function Main() {
             <Benefits />
             <Courses />
             <Testimonials />
+            <Faq />
         </>
     );
 };
