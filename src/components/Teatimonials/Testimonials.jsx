@@ -28,14 +28,14 @@ export default function Testimonials() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                    {/* <div className="">
+                    <div className="">
                         <button className="">
                             <RiArrowLeftLine size={30} />
                         </button>
                         <button>
                             <RiArrowRightLine size={30} />
                         </button>
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </>
