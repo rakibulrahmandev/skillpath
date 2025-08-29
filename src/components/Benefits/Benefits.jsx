@@ -10,8 +10,8 @@ export default function Benefits() {
                     <Title title='Benefits' text='Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.' link='View All' />
                     <div className="grid gap-5 md:grid-cols-2 lg:gird-cols-3 mt-12 lg:mt-16
                     ">
-                        {benefitItems.map((item) => (
-                            <div className="bg-white p-10 flex flex-col rounded-xl">
+                        {benefitItems.map((item, idx) => (
+                            <div key={idx} className="bg-white p-10 flex flex-col rounded-xl">
                                 <div className="bg-orange-75 w-[55%] h-24 flex items-center justify-center mx-auto rounded-xl mb-8">
                                     <img src={item?.icon} alt={item?.title} width={64} height={64} />
                                 </div>
