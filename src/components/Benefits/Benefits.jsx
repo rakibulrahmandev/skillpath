@@ -8,7 +8,7 @@ export default function Benefits() {
             <section className="section">
                 <div className="container">
                     <Title title='Benefits' text='Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.' link='View All' />
-                    <div className="grid gap-5 md:grid-cols-2 lg:gird-cols-3 mt-12 lg:mt-16
+                    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16
                     ">
                         {benefitItems.map((item, idx) => (
                             <div key={idx} className="bg-white p-10 flex flex-col rounded-xl">
