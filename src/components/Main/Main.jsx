@@ -12,6 +12,7 @@ export default function Main() {
             <Courses />
             <Testimonials />
             <Faq />
+            <Footer />
         </>
     );
 };
